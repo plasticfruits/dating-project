@@ -155,6 +155,11 @@
       });
 
       /*
+      * Fallback
+      */
+      if (!params.a) window.location.href = `${window.location.pathname}?a=1`
+
+      /*
       * Setup
       */
       const audio = document.getElementById('audio')
