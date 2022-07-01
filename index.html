@@ -84,7 +84,6 @@
         height: 100%;
 
         background-color: white;
-        /* background: linear-gradient(262deg, #ff7854, #fd267d); */
       }
 
       #timeline {
@@ -97,14 +96,30 @@
         background-color: black;
         transition: width 750ms ease-out;
       }
+
+      #links {
+        position: fixed;
+        bottom: var(--space);
+        left: var(--space);
+        width: 100%;
+        z-index: 10;
+        margin-bottom: 0;
+
+        mix-blend-mode: exclusion;
+
+        font-size: smaller;
+      }
+
+      a {
+        color: white;
+      }
     </style>
 
     <!-- <link rel="stylesheet" href="https://use.typekit.net/upg8xlw.css" /> -->
   </head>
   <body>
-    <header id="header">
+    <header id="header"></header>
 
-    </header>
     <div id="play" class="isVisible">
       Play
     </div>
@@ -117,10 +132,16 @@
     <div id="prev">
       Previous
     </div>
+
     <div id="progress">
       <div id="timeline">
       </div>
     </div>
+
+    <p id="links">
+      <a href="https://www.asismaria.com">www.asismaria.com</a><br>
+      <a href="https://www.instagram.com/asisdemaria/">@asisdemaria</a>
+    </p>
     <audio id="audio" controls autoplay>
       <source id="source" src="" type="audio/mp4" />
       <p>Your browser does not support HTML5 audio.</p>
