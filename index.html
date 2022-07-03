@@ -180,7 +180,7 @@
     </div>
 
     <p id="links">
-      <a href="https://www.asismaria.com">www.asismaria.com</a><br>
+      <!-- <a href="https://www.asismaria.com">www.asismaria.com</a><br> -->
       <a href="https://www.instagram.com/asisdemaria/">@asisdemaria</a>
     </p>
     <audio id="audio" controls autoplay>
@@ -222,7 +222,7 @@
       * Update Header
       */
       const header = document.getElementById('header')
-      header.innerText = `Click to play sound ${params.a}`
+      header.innerText = `Click to play sound of image ${params.a}`
       /*
       * Add event listeners
       */
@@ -232,7 +232,7 @@
         play.classList.remove('isVisible')
         pause.classList.add('isVisible')
 
-        header.innerText = `Now playing ${params.a}`
+        header.innerText = `Now playing image ${params.a}`
       })
 
       const pause = document.getElementById('pause')
