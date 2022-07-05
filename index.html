@@ -222,7 +222,7 @@
       * Update Header
       */
       const header = document.getElementById('header')
-      header.innerText = `Click to play sound of image ${params.a}`
+      header.innerText = `Click to listen to image ${params.a}`
       /*
       * Add event listeners
       */
@@ -232,7 +232,7 @@
         play.classList.remove('isVisible')
         pause.classList.add('isVisible')
 
-        header.innerText = `Now playing image ${params.a}`
+        header.innerText = `Listening to image ${params.a}`
       })
 
       const pause = document.getElementById('pause')
@@ -241,7 +241,7 @@
         pause.classList.remove('isVisible')
         play.classList.add('isVisible')
 
-        header.innerText = `Click to play sound ${params.a}`
+        header.innerText = `Continue playing image ${params.a}`
       })
 
       /*
